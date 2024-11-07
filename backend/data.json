@@ -1,0 +1,65 @@
+[{
+    "id": "1",
+    "sale": "Sale",
+    "nom_product": "80 cm (32 inch) Full HD LED Smart Android TV",
+    "image":"https://infinity-radiant.myshopify.com/cdn/shop/files/Firefly-without-brand-name-16925.png?v=1722601677&width=1600",
+    "prixNew": "339,50$",
+    "prix":"500.00$"
+  },
+  {
+    "id": "2",
+    "sale": "New",
+    "nom_product": "80 cm (32 inch) Full HD LED Smart Android TV",
+    "image":"https://infinity-radiant.myshopify.com/cdn/shop/files/Firefly-without-brand-name-16925.png?v=1722601677&width=1600",
+    "prixNew": "399,99$",
+    "prix":"470.00$"
+  },
+  {
+    "id": "3",
+    "sale": "Sale",
+    "nom_product": "80 cm (32 inch) Full HD LED Smart Android TV",
+    "image":"https://infinity-radiant.myshopify.com/cdn/shop/files/Firefly-without-brand-name-16925.png?v=1722601677&width=1600",
+    "prixNew": "259,50$",
+    "prix":"300.00$"
+  },
+  {
+    "id": "4",
+    "sale": "New",
+    "nom_product": "80 cm (32 inch) Full HD LED Smart Android TV",
+    "image":"https://infinity-radiant.myshopify.com/cdn/shop/files/Firefly-without-brand-name-16925.png?v=1722601677&width=1600",
+    "prixNew": "240.00$",
+    "prix":"300.00$"
+  },
+  {
+    "id": "5",
+    "sale": "Sale",
+    "nom_product": "80 cm (32 inch) Full HD LED Smart Android TV",
+    "image":"https://infinity-radiant.myshopify.com/cdn/shop/files/Firefly-without-brand-name-16925.png?v=1722601677&width=1600",
+    "prixNew": "449,50$",
+    "prix":"500.00$"
+  },
+  {
+    "id": "6",
+    "sale": "Sale",
+    "nom_product": "80 cm (32 inch) Full HD LED Smart Android TV",
+    "image":"https://infinity-radiant.myshopify.com/cdn/shop/files/Firefly-without-brand-name-16925.png?v=1722601677&width=1600",
+    "prixNew": "299,99$",
+    "prix":"470.00$"
+  },
+  {
+    "id": "7",
+    "sale": "New",
+    "nom_product": "80 cm (32 inch) Full HD LED Smart Android TV",
+    "image":"https://infinity-radiant.myshopify.com/cdn/shop/files/Firefly-without-brand-name-16925.png?v=1722601677&width=1600",
+    "prixNew": "259,50$",
+    "prix":"300.00$"
+  },
+  {
+    "id": "8",
+    "sale": "Sale",
+    "nom_product": "80 cm (32 inch) Full HD LED Smart Android TV",
+    "image":"https://infinity-radiant.myshopify.com/cdn/shop/files/Firefly-without-brand-name-16925.png?v=1722601677&width=1600",
+    "prixNew": "300.00$",
+    "prix":"300.00$"
+  }
+  ]

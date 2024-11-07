@@ -1,1 +1,1 @@
-console.log(HHH)
+console.log('test')
