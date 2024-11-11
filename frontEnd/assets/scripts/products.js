@@ -1,18 +1,16 @@
 
 async function fetchProducts() {
 
-
         const response = await fetch('http://localhost:3000/api/products');
+
+        const products = await response.json(); 
+        //  console.log(products);
+        let originalProducts = await products;
         
-       
-
-
-        const products = await response.json();  
-      
         displayProducts(products);
+       return products;
     
 }
-
 
 function displayProducts(products) {
     const productContainer = document.getElementById('products'); 
@@ -35,7 +33,6 @@ function displayProducts(products) {
             <p class="text-gray-500 text-center">${product.category}</p>
             <p class="text-lg text-green-500 text-center">$${product.price.toFixed(2)}</p>
             
-            <!-- الـ div الخاص بالأزرار فقط -->
             <div class="flex space-x-4">
                 <button style="background-color: #48bb78; color: white;" class="px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
                     Add to Cart
@@ -52,10 +49,26 @@ function displayProducts(products) {
 }
 
 
+async function displayCategorie(category) {
+    const data = await fetchProducts();
+    let filtedcategories = data.filter(product => product.category === category);
 
-
-
-
-
-
+    console.log(filtedcategories);
+}
 document.addEventListener('DOMContentLoaded', fetchProducts);
+
+////////dropdownlist//////
+const dropdownButton = document.getElementById("dropdownButton");
+const dropdownMenu = document.getElementById("dropdownMenu");
+const dropdownIcon = document.getElementById("dropdownIcon");
+
+dropdownButton.addEventListener("click", function(event) {
+
+  event.stopPropagation();
+  
+
+  dropdownMenu.classList.toggle("hidden");
+
+  dropdownIcon.classList.toggle("rotate-180");
+});
+

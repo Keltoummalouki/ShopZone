@@ -37,7 +37,7 @@
             href="about.html">About</a>
           <a class="mt-2 px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0"
             href="#">Contact</a>
-          <div @click.away="open = false" class="relative" x-data="{ open: false }">
+          <!-- <div @click.away="open = false" class="relative" x-data="{ open: false }">
             <button @click="open = !open"
               class="mt-2 flex w-full flex-row items-center px-4 py-2 text-left text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0 md:inline md:w-auto">
               <span>Dropdown List</span>
@@ -58,14 +58,35 @@
               style="display: none">
               <div class="rounded-md bg-white p-2 shadow">
                 <a class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0"
-                  href="#">Link #1</a>
+                  href="#"></a>
                 <a class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0"
-                  href="#">Link #2</a>
+                  href="#"></a>
                 <a class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0"
-                  href="#">Link #3</a>
+                  href="#"></a>
+              </div>
+            </div>
+          </div> -->
+          <div class="relative">
+            <button id="dropdownButton" class="mt-2 flex w-full flex-row items-center px-4 py-2 text-left text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0 md:inline md:w-auto">
+              <span>Catégories</span>
+              <svg id="dropdownIcon" fill="currentColor" viewBox="0 0 20 20" class="ml-1 mt-1 inline size-4 rotate-0 transition-transform duration-200 md:-mt-1">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          
+            <div id="dropdownMenu" class="absolute right-0 z-30 mt-2 w-full origin-top-right rounded-md shadow-lg md:w-48 hidden">
+              <div class="rounded-md bg-white p-2 shadow">
+                <button id="smartphones" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Smartphones" >Smartphones</button>
+                <button  id="accessories" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Accessories">Accessories</button>
+                <button  id="powerBanks" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="PowerBanks">Power Banks</button>
+                <button  id="cases" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Cases">Cases</button>
+                <button  id="chargers" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Chargers">Chargers</button>
+                <button  id="smartwatches" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Smartwatches">Smartwatches</button>
+                <button  id="headphones" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0"onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Headphones">Headphones</button>
               </div>
             </div>
           </div>
+          
           <div class="inline-flex ml-10 list-none items-center gap-2 lg:ml-auto">
             <div class="mt-4 sm:ml-3 sm:mt-0">
               <i class="fa-solid fa-cart-shopping"></i>

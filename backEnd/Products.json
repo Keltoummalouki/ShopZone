@@ -74,7 +74,7 @@
     {
         "id": 9,
         "name": "Anker PowerCore 10000mAh",
-        "category": "Power Banks",
+        "category": "PowerBanks",
         "price": 30.00,
         "image": "../assets/media/images/Anker_PowerCore_10000mAh.jpg",
         "soldout": false,
@@ -83,7 +83,7 @@
     {
         "id": 10,
         "name": "Baseus 20000mAh Power Bank",
-        "category": "Power Banks",
+        "category": "PowerBanks",
         "price": 45.00,
         "image": "../assets/media/images/Baseus_20000mAh_Power_Bank.jpg",
         "soldout": true,
