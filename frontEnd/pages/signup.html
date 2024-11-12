@@ -300,48 +300,7 @@
       </div>
     </footer>
 
-    <script>
-      function validateForm() {
-        // Récupération des éléments et initialisation des messages d'erreur
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
-        const confirmPassword = document.getElementById("confirmPassword").value;
-        let isValid = true;
-    
-        // Réinitialisation des messages d'erreur
-        document.getElementById("nameError").innerText = "";
-        document.getElementById("emailError").innerText = "";
-        document.getElementById("passwordError").innerText = "";
-        document.getElementById("confirmPasswordError").innerText = "";
-    
-        // Validation du nom
-        if (name.trim() === "") {
-          document.getElementById("nameError").innerText = "Le nom est requis.";
-          isValid = false;
-        }
-    
-        // Validation de l'email
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(email)) {
-          document.getElementById("emailError").innerText = "Veuillez entrer un email valide.";
-          isValid = false;
-        }
-    
-        // Validation du mot de passe
-        if (password.length < 8) {
-          document.getElementById("passwordError").innerText = "Le mot de passe doit comporter au moins 8 caractères.";
-          isValid = false;
-        }
-    
-        // Confirmation du mot de passe
-        if (password !== confirmPassword) {
-          document.getElementById("confirmPasswordError").innerText = "Les mots de passe ne correspondent pas.";
-          isValid = false;
-        }
-    
-        return isValid;
-      }
-    </script>
+
+    <script src="https://kit.fontawesome.com/6d9e6483d0.js" crossorigin="anonymous" async defer></script>
 </body>
 </html>
