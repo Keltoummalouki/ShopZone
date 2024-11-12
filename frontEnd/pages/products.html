@@ -170,11 +170,11 @@
           </div>
           <div class="flex flex-col gap-3 ml-8">
             <label class="flex items-center text-sm font-medium">
-              <input type="radio" id="in" name="stock-status" class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]">
-              <span class="inline-block cursor-pointer">In Stock</span>
+              <input type="radio" name="stockStatus" class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7] filter" onclick="filterInStock()" />
+              <span class="inline-block cursor-pointer" >In Stock</span>
             </label>
             <label class="flex items-center text-sm font-medium">
-              <input type="radio" id="out" name="stock-status" class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]">
+              <input type="radio" name="stockStatus" class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7] filter"  onclick="filterOutStock()" />
               <span class="inline-block cursor-pointer">Out of Stock</span>
             </label>
           </div>
