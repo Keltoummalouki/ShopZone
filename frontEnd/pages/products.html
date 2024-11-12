@@ -170,14 +170,15 @@
           </div>
           <div class="flex flex-col gap-3 ml-8">
             <label class="flex items-center text-sm font-medium">
-              <div class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]"></div>
-              <span class="inline-block cursor-pointer" for="Filter-One-Option-1">In Stock</span>
+              <input type="radio" name="stockStatus" class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7] filter" onclick="filterInStock()" />
+              <span class="inline-block cursor-pointer" >In Stock</span>
             </label>
             <label class="flex items-center text-sm font-medium">
-              <div class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]"></div>
-              <span class="inline-block cursor-pointer" for="Filter-One-Option-1">Out Stock</span>
+              <input type="radio" name="stockStatus" class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7] filter"  onclick="filterOutStock()" />
+              <span class="inline-block cursor-pointer">Out of Stock</span>
             </label>
           </div>
+          
           <div role="button" tabindex="0"
             class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-gray-50 active:bg-opacity-80 hover:text-blue-900 focus:text-blue-900 active:text-blue-900 outline-none">
             <div class="grid place-items-center mr-4">
