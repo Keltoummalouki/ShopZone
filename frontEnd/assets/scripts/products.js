@@ -103,6 +103,13 @@ function searchByName() {
     });
 }
 
+function filterByPrice(maxPrice) {
+    const filteredProducts = products.filter(product => product.price <= maxPrice);
+    productContainer.innerHTML = '';
+    displayProducts(filteredProducts);
+    
+}
+
 
 
 
