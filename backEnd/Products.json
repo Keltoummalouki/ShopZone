@@ -1,0 +1,220 @@
+[{
+    "id": 1,
+    
+    "sale": "Sale",
+    "nom_product": "iPhone 14 Pro Max",
+    "category": "Smartphones",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/iPhone_14_Pro_Max.jpg",
+    "stock": true
+},
+{
+    "id": 2,
+    "sale": "Sale",
+    "nom_product": "Samsung Galaxy S23 Ultra",
+    "category": "Smartphones",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Samsung_Galaxy_S23_Ultra.jpg",
+    "stock": false
+},
+{
+    "id": 3,
+    
+    "sale": "new",
+    "nom_product": "Google Pixel 8 Pro",
+    "category": "Smartphones",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Google_Pixel_8_Pro.jpg",
+    "stock": false
+},
+{
+    "id": 4,
+    
+    "sale": "Sale",
+    "nom_product": "OnePlus 11",
+    "category": "Smartphones",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/OnePlus_11.jpg",
+    "stock": false
+},
+{
+    "id": 5,
+    
+    "sale": "New",
+    "nom_product": "Apple AirPods Pro 2",
+    "category": "Accessories",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Apple_AirPods_Pro_2.jpg",
+    "stock": true
+},
+{
+    "id": 6,
+    
+    "sale": "Sale",
+    "nom_product": "Samsung Galaxy Buds 2",
+    "category": "Accessories",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Samsung_Galaxy_Buds_2.jpg",
+    "stock": false
+},
+{
+    "id": 7,
+    
+    "sale": "Sale",
+    "nom_product": "Xiaomi Mi True Wireless Earbuds",
+    "category": "Accessories",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Xiaomi_Mi_True_Wireless_Earbuds.jpg",
+    "stock": false
+},
+{
+    "id": 8,
+    
+    "sale": "Sale",
+    "nom_product": "Huawei FreeBuds Pro 2",
+    "category": "Accessories",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Huawei_FreeBuds_Pro_2.jpg",
+    "stock": false   
+},
+{
+    "id": 9,
+    
+    "sale": "new",
+    "nom_product": "Anker PowerCore 10000mAh",
+    "category": "PowerBanks",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Anker_PowerCore_10000mAh.jpg",
+    "stock": true
+},
+{
+    "id": 10,
+    
+    "sale": "Sale",
+    "nom_product": "Baseus 20000mAh Power Bank",
+    "category": "PowerBanks",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Baseus_20000mAh_Power_Bank.jpg",
+    "stock": false
+},
+{
+    "id": 11,
+    
+    "sale": "Sale",
+    "nom_product": "Spigen Rugged Armor Case iPhone 14",
+    "category": "Cases",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Spigen_Rugged_Armor_Case_iPhone_14.jpg",
+    "stock": false
+},
+{
+    "id": 12,
+    
+    "sale": "Sale",
+    "nom_product": "OtterBox Defender Series Case  Galaxy S23",
+    "category": "Cases",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/OtterBox_Defender_Series_Case_Galaxy_S23.jpg",
+    "stock": false
+},
+{
+    "id": 13,
+    
+    "sale": "Sale",
+    "nom_product": "Anker Wireless Charger Pad",
+    "category": "Chargers",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Anker_Wireless_Charger_Pad.jpg",
+    "stock": false
+},
+{
+    "id": 14,
+    
+    "sale": "Sale",
+    "nom_product": "Samsung Fast Charger 25W",
+    "category": "Chargers",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Samsung_Fast_Charger_25W.jpg",
+    "stock": false
+},
+{
+    "id": 15,
+    
+    "sale": "new",
+    "nom_product": "Apple MagSafe Charger",
+    "category": "Chargers",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Apple_MagSafe_Charger.jpg",
+    "stock": false
+},
+{
+    "id": 16,
+    
+    "sale": "Sale",
+    "nom_product": "Xiaomi Mi Band 7",
+    "category": "Smartwatches",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Xiaomi_Mi_Band_7.jpg",
+    "stock": false
+},
+{
+    "id": 17,
+    
+    "sale": "Sale",
+    "nom_product": "Apple Watch Series 8",
+    "category": "Smartwatches",
+    "prixNew": 250.50,
+    "prix": 500.00,
+     "image": "../assets/media/images/Apple_Watch_Series_8.jpg",
+     "stock": true
+},
+{
+    "id": 18,
+    
+    "sale": "Sale",
+    "nom_product": "Samsung Galaxy Watch 5",
+    "category": "Smartwatches",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Samsung_Galaxy_Watch_5.jpg",
+    "stock": false
+},
+{
+    "id": 19,
+    
+    "sale": "Sale",
+    "nom_product": "Sony WH-1000XM4 Headphones",
+    "category": "Headphones",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Sony_WH_1000XM4_Headphones.jpg",
+    "stock": true
+},
+{
+    "id": 20,
+    
+    "sale": "new",
+    "nom_product": "Bose QuietComfort 45",
+    "category": "Headphones",
+    "prixNew": 250.50,
+    "prix": 500.00,
+    "image": "../assets/media/images/Bose_QuietComfort_45.jpg",
+    "stock": true
+}
+]
