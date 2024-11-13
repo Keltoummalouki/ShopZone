@@ -15,7 +15,7 @@
       <div x-data="{ open: false }"
         class="mx-auto flex w-full flex-row pt-5 pb-5 md:flex-row md:items-center md:justify-between md:px-6 lg:px-20">
         <div class="flex flex-row items-center justify-between lg:justify-start">
-          <a href="#"
+          <a href="../index.html"
             class="text-lg font-bold tracking-tighter text-black-600 transition duration-500 ease-in-out lg:pr-6">
             Shop<span
               class="text-lg font-bold tracking-tighter text-blue-700 transition duration-500 ease-in-out ">Zone</span>
@@ -34,98 +34,45 @@
         <nav :class="{'flex': open, 'hidden': !open}"
           class="hidden grow flex-col items-center border-blue-600 pb-4 md:flex md:flex-row md:justify-end md:pb-0 lg:border-l-2 lg:pl-2">
           <a class="mt-2 px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0"
-            href="about.html">About</a>
+            href="../pages/products.html">Products</a>
+            <a class="mt-2 px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0"
+            href="../pages/contact.html">Contact</a>
           <a class="mt-2 px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0"
-            href="#">Contact</a>
-          <!-- <div @click.away="open = false" class="relative" x-data="{ open: false }">
-            <button @click="open = !open"
-              class="mt-2 flex w-full flex-row items-center px-4 py-2 text-left text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0 md:inline md:w-auto">
-              <span>Dropdown List</span>
-              <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
-                class="ml-1 mt-1 inline size-4 rotate-0 transition-transform duration-200 md:-mt-1">
-                <path fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </button>
-            <div x-show="open" x-transition:enter="transition ease-out duration-100 "
-              x-transition:enter-start="transform opacity-0 scale-95"
-              x-transition:enter-end="transform opacity-100 scale-100"
-              x-transition:leave="transition ease-in duration-75"
-              x-transition:leave-start="transform opacity-100 scale-100"
-              x-transition:leave-end="transform opacity-0 scale-95"
-              class="absolute right-0 z-30 mt-2 w-full origin-top-right rounded-md shadow-lg md:w-48"
-              style="display: none">
-              <div class="rounded-md bg-white p-2 shadow">
-                <a class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0"
-                  href="#"></a>
-                <a class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0"
-                  href="#"></a>
-                <a class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0"
-                  href="#"></a>
-              </div>
-            </div>
-          </div> -->
-          <div class="relative">
-            <button id="dropdownButton" class="mt-2 flex w-full flex-row items-center px-4 py-2 text-left text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0 md:inline md:w-auto">
-              <span>Catégories</span>
-              <svg id="dropdownIcon" fill="currentColor" viewBox="0 0 20 20" class="ml-1 mt-1 inline size-4 rotate-0 transition-transform duration-200 md:-mt-1">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-              </svg>
-            </button>
+            href="about.html">About</a>
           
-            <div id="dropdownMenu" class="absolute right-0 z-30 mt-2 w-full origin-top-right rounded-md shadow-lg md:w-48 hidden">
-              <div class="rounded-md bg-white p-2 shadow">
-                <button id="smartphones" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Smartphones" >Smartphones</button>
-                <button  id="accessories" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Accessories">Accessories</button>
-                <button  id="powerBanks" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="PowerBanks">Power Banks</button>
-                <button  id="cases" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Cases">Cases</button>
-                <button  id="chargers" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Chargers">Chargers</button>
-                <button  id="smartwatches" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Smartwatches">Smartwatches</button>
-                <button  id="headphones" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0"onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Headphones">Headphones</button>
+            <div class="relative">
+              <button id="dropdownButton" class="mt-2 flex w-full flex-row items-center px-4 py-2 text-left text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0 md:inline md:w-auto">
+                <span>Catégories</span>
+                <svg id="dropdownIcon" fill="currentColor" viewBox="0 0 20 20" class="ml-1 mt-1 inline size-4 rotate-0 transition-transform duration-200 md:-mt-1">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            
+              <div id="dropdownMenu" class="absolute right-0 z-30 mt-2 w-full origin-top-right rounded-md shadow-lg md:w-48 hidden">
+                <div class="rounded-md bg-white p-2 shadow">
+                  <button id="smartphones" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Smartphones" >Smartphones</button>
+                  <button  id="accessories" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Accessories">Accessories</button>
+                  <button  id="powerBanks" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="PowerBanks">Power Banks</button>
+                  <button  id="cases" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Cases">Cases</button>
+                  <button  id="chargers" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Chargers">Chargers</button>
+                  <button  id="smartwatches" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0" onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Smartwatches">Smartwatches</button>
+                  <button  id="headphones" class="mt-2 block px-4 py-2 text-sm text-gray-500 hover:text-blue-600 focus:outline-none md:mt-0"onclick="displayCategorie(this.getAttribute('data-category'))" data-category="Headphones">Headphones</button>
+                </div>
               </div>
             </div>
-          </div>
           
           <div class="inline-flex ml-10 list-none items-center gap-2 lg:ml-auto">
-            <div class="mt-4 sm:ml-3 sm:mt-0">
-              <i class="fa-solid fa-cart-shopping"></i>
+          <a href="../pages/checkout.html">            <div class="mt-4 sm:ml-3 sm:mt-0">
+              <i class="fa-solid fa-cart-shopping relative">
+                <div id="cmpt" class="w-5 h-5 bg-blue-600 rounded-full absolute bottom-3 right-2 text-center text-sm text-white">0</div>
+              </i>
             </div>
+          </a>
             <div class="mt-4 sm:ml-3 sm:mt-0">
-              <i class="fa-solid fa-circle-user"></i>
+              <a href="../pages/signin.html"><i class="fa-solid fa-circle-user"></i></a>
             </div>
           </div>
         </nav>
-      </div>
-    </div>
-    <div>
-      <div class="overflow-x-auto whitespace-nowrap bg-gray-50  pt-1 pb-1 pl-10 px-16">
-        <ul class="inline-flex list-none items-center flex gap-x-1">
-          <li>
-            <a href="#"
-              class="mr-1 rounded-md px-4 py-1 text-base text-gray-500 ring-offset-2 ring-offset-current transition duration-500 ease-in-out hover:text-blue-600 focus:outline-none focus:ring-2">TV</a>
-          </li>
-          <li>
-            <a href="#"
-              class="mr-1 rounded-md px-4 py-1 text-base text-gray-500 ring-offset-2 ring-offset-current transition duration-500 ease-in-out hover:text-blue-600 focus:outline-none focus:ring-2">Smart Watch</a>
-          </li>
-          <li>
-            <a href="#"
-              class="mr-1 rounded-md px-4 py-1 text-base text-gray-500 ring-offset-2 ring-offset-current transition duration-500 ease-in-out hover:text-blue-600 focus:outline-none focus:ring-2">Earphone</a>
-          </li>
-          <li>
-            <a href="#"
-              class="mr-1 rounded-md px-4 py-1 text-base text-gray-500 ring-offset-2 ring-offset-current transition duration-500 ease-in-out hover:text-blue-600 focus:outline-none focus:ring-2">Phone</a>
-          </li>
-          <li>
-            <a href="#"
-              class="mr-1 rounded-md px-4 py-1 text-base text-gray-500 ring-offset-2 ring-offset-current transition duration-500 ease-in-out hover:text-blue-600 focus:outline-none focus:ring-2">Desktop</a>
-          </li>
-          <li>
-            <a href="#"
-              class="mr-1 rounded-md px-4 py-1 text-base text-gray-500 ring-offset-2 ring-offset-current transition duration-500 ease-in-out hover:text-blue-600 focus:outline-none focus:ring-2">Electronique</a>
-          </li>
-          </ul>
       </div>
     </div>
 
@@ -149,18 +96,19 @@
           </div>
           <div class="flex flex-col gap-3 ml-8">
             <label class="flex items-center text-sm font-medium">
-              <div class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]"></div>
-              <span class="inline-block cursor-pointer" for="Filter-One-Option-1">Moins 50$</span>
+              <input type="radio" name="price" id="Moins50"  onclick="filterByPrice(50)" >
+              <span id="priceMoins" class="inline-block cursor-pointer" for="Moins50">Moins 50$</span>
             </label>
             <label class="flex items-center text-sm font-medium">
-              <div class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]"></div>
-              <span class="inline-block cursor-pointer" for="Filter-One-Option-1">Moins 150$</span>
+              <input type="radio" name="price" id="Moins150"  onclick="filterByPrice(150)" >
+              <span class="inline-block cursor-pointer" for="Moins150">Moins 150$</span>
             </label>
             <label class="flex items-center text-sm font-medium">
-              <div class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]"></div>
-              <span class="inline-block cursor-pointer" for="Filter-One-Option-1">Moins 300$</span>
+              <input type="radio" name="price" id="Moins300" onclick="filterByPrice(300)">
+              <span class="inline-block cursor-pointer" for="Moins300">Moins 300$</span>
             </label>
           </div>
+
           <div role="button" tabindex="0"
             class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-gray-50 active:bg-opacity-80 hover:text-blue-900 focus:text-blue-900 active:text-blue-900 outline-none">
             <div class="grid place-items-center mr-4">
@@ -170,11 +118,11 @@
           </div>
           <div class="flex flex-col gap-3 ml-8">
             <label class="flex items-center text-sm font-medium">
-              <div class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]"></div>
+              <div class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]" onclick="filterInStock()"></div>
               <span class="inline-block cursor-pointer" for="Filter-One-Option-1">In Stock</span>
             </label>
             <label class="flex items-center text-sm font-medium">
-              <div class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]"></div>
+              <div class="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]" onclick="filterOutStock()"></div>
               <span class="inline-block cursor-pointer" for="Filter-One-Option-1">Out Stock</span>
             </label>
           </div>
@@ -216,13 +164,13 @@
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
-            <input type="text" placeholder="Search" onchange="search()"
+            <input type="text" id="Search" placeholder="Search" onkeyup="searchByName()"
               class="w-full py-3 pl-12 pr-4 text-gray-500 border rounded-md outline-none bg-gray-50 focus:bg-white focus:border-indigo-600" />
           </div>
 
         </form>
         <div class="mt-4 sm:ml-3 sm:mt-0 relative top-12 right-40">
-          <button type="submit" value="Subscribe" name="member[subscribe]" id="member_submit"
+          <button   value="Subscribe" name="member[subscribe]" id="member_submit"
             class="block w-full rounded-lg border border-transparent bg-blue-600 px-5 py-2 text-base font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300 sm:px-10 mt-1">Search</button>
         </div>
       </div>
